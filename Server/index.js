@@ -26,4 +26,3 @@ io.on('connection', (socket) => {
 })
 
 server.listen(6677, () => console.log('Servidor esta funcionando en http://localhost:6677'));
-
