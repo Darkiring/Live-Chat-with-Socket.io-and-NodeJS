@@ -1,0 +1,28 @@
+{
+  "name": "curso-socket.io",
+  "version": "1.0.0",
+  "description": "Live Chat",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Darkiring/Live-Chat-with-Socket.io-and-NodeJS.git"
+  },
+  "author": "Darkiring",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Darkiring/Live-Chat-with-Socket.io-and-NodeJS/issues"
+  },
+  "homepage": "https://github.com/Darkiring/Live-Chat-with-Socket.io-and-NodeJS#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.7.0",
+    "nodemon": "^1.18.4"
+  }
+}
