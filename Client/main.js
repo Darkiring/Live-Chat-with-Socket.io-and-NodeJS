@@ -1,9 +1,11 @@
-var socket = io.connect('http://192.168.150.161:6677', { 'forceNew': true });
+var socket = io.connect('http://52.14.150.68:22', { 'forceNew': true });
 
 socket.on('messages', (data) => {
     console.log(data);
     render(data);
 });
+
+var globalID = 1;
 
 render = (data) => {
     var html = data.map((message, index) => {
@@ -14,6 +16,7 @@ render = (data) => {
             </div>
         `);
     }).join(' ');
+    
     var div_msgs = document.getElementById('messages');
     div_msgs.innerHTML = html;
     div_msgs.scrollTop = div_msgs.scrollHeight;
