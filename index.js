@@ -3,7 +3,7 @@ var app = express();
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
-app.use(express.static('client'));
+app.use(express.static('Client'));
 
 app.get('/hola-mundo', (red, res) => {
     res.status(200).send('Hola mundo desde una ruta');
@@ -30,4 +30,4 @@ io.on('connection', (socket) => {
     });
 })
 
-server.listen(8080, () => console.log('Servidor esta funcionando en http://18.223.185.176:8080'));
+server.listen(6677, () => console.log('Servidor esta funcionando en http://192.168.12.2:6677'));
