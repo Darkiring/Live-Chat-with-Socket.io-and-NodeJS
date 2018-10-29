@@ -1,14 +1,13 @@
 var socket = io.connect('http://18.223.185.176:8080', { 'forceNew': true });
 
 socket.on('messages', (data) => {
-    console.log(data);
     render(data);
 });
 
 var globalID = 1;
 
 render = (data) => {
-    var html = data.map((message, index) => {
+    var html = data.map((message) => {
         return(`
             <div class="message">
                 <strong>${message.nickname}</strong> dice:

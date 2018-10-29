@@ -5,7 +5,7 @@ var io = require('socket.io')(server);
 
 app.use(express.static('Client'));
 
-app.get('/hola-mundo', (red, res) => {
+app.get('/hola-mundo', (res) => {
     res.status(200).send('Hola mundo desde una ruta');
 })
 
@@ -30,4 +30,4 @@ io.on('connection', (socket) => {
     });
 })
 
-server.listen(8080, () => console.log('Servidor esta funcionando en http://18.223.185.176'));
+server.listen(8080, () => console.log('Servidor esta funcionando en http://18.223.185.176:8080'));
