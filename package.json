@@ -4,7 +4,7 @@
   "description": "Live Chat",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server/index.js",
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,6 +23,6 @@
   },
   "devDependencies": {
     "eslint": "^5.7.0",
-    "nodemon": "^1.18.4"
+    "nodemon": "^1.18.5"
   }
 }

@@ -30,4 +30,4 @@ io.on('connection', (socket) => {
     });
 })
 
-server.listen(6677, () => console.log('Servidor esta funcionando en http://192.168.12.2:6677'));
+server.listen(8080, () => console.log('Servidor esta funcionando en http://18.223.185.176'));
