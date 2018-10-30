@@ -26,8 +26,8 @@ addMessage = (e) => {
         nickname: document.getElementById('nickname').value,
         text: document.getElementById('text').value,
     };
-    document.getElementById('nickname').style.display = 'none';
-    document.getElementById('lblnickname').style.display = 'none';
+
+    document.getElementById('nickname').classList.add('ocult');
     document.getElementById('text').value = ' ';
     socket.emit('add-message', message);
     return false;

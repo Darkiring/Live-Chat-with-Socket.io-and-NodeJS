@@ -28,3 +28,7 @@
     font-weight: bold;
     padding: 7px 20px;
 }
+
+.ocult{
+    user-select: none;
+}
