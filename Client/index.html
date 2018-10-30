@@ -7,32 +7,19 @@
     <title>Chat Prueba Socket.io y NodeJS</title>
     <script type="text/javascript" src="/socket.io/socket.io.js"></script>
     <script src="main.js"></script>
-    <!-- <link rel="stylesheet" href="/Client/style.css"> -->
-    <style>
-        #messages{
-            width: 95%;
-            max-width: 400px;
-            height: 350px;
-            overflow-y: scroll;
-            border: 1px solid #eee;
-            box-shadow: 1px 2px 3px 4px #ccc inset;
-        }
-        .message{
-            margin: 20px;
-            padding: 5px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            background: white;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Chat Prueba Socket.io y NodeJS</h1>
-    <div id='messages'></div>
-    <form onsubmit="return addMessage(this)">
-        <input id="nickname" type="text" placeholder="NickName"/>
-        <textarea id="text" placeholder="Mensaje..." ></textarea>
-        <input type="submit" value="Enviar" />
-    </form>
+    <div class="container">
+        <h1>Chat Prueba Socket.io y NodeJS</h1>
+        <div id='messages'></div>
+        <form onsubmit="return addMessage(this)">
+            <label for="nickname">Name: </label>
+            <input id="nickname" name="nickname" type="text" placeholder="NickName"/><br>
+            <label for="nickname">Message: </label>
+            <textarea id="text" name="message" placeholder="Mensaje..." ></textarea><br>
+            <input type="submit"  class="send" value="Enviar"/>
+        </form>
+    </div>
 </body>
 </html>

@@ -1,1 +1,30 @@
 
+#messages{
+    width: 95%;
+    max-width: 400px;
+    height: 350px;
+    overflow-y: scroll;
+    border: 1px solid #eee;
+    box-shadow: 1px 2px 3px 4px #ccc inset;
+}
+.message{
+    margin: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: white;
+}
+.container{  
+    width:30%;
+    margin:0 auto;
+}
+
+.send{
+    border:none;
+    color:#fff;
+    background-color: #000;
+    font-family: Calibri;
+    font-size:20px;
+    font-weight: bold;
+    padding: 7px 20px;
+}
